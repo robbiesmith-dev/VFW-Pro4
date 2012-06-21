@@ -87,6 +87,10 @@ function storeData(key){
 //display data function
 function getData(){
 	toggleControls("on");
+	if(localStorage.length === 0){
+		alert("There is no data in Local Storage so example data was added.")
+		autoFillData();
+	}
 	var makeDiv = document.createElement('div');	
 	makeDiv.setAttribute("id", "items");
 	var makeList = document.createElement('ul');
@@ -112,6 +116,15 @@ function getData(){
 		makeItemLinks(localStorage.key(i), linksLi);
 	}
 };
+
+function autoFillData(){
+	//json.js info
+	for(var n in json){
+		var id = Math.floor(Math.random()*10000001);
+		localStorage.setItem(id, JSON.stringify(json[n]));
+	}
+}
+
 
 //Create the edit and delete links for stored data when displayed
 function makeItemLinks (key, linksLi) {
