@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--Robert Smith, VFW 1206, 05-31-2012-->
+<html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="My first HTML5 document."/>
+		<meta name="keywords" content="html5, Mobile development"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+		<title>Assignment Tracker</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<h1>Add An Assignment</h1>
+		</header>
+		<form action="#" method="post" id="assignmentForm">
+			<fieldset>
+				<legend>Assignment Info</legend>
+					<ul id="errors"></ul>
+					<ul>
+						<li id="select"><label for="GorI">Group or Individual Assignment:</label></li>
+						<li><label for="clname">Class:</label><input type="text" id="clname" /></li>
+						<li><label for="asname">Assignment:</label><input type="text" id="asname" /></li>
+						<li><label for="dudate">Due Date:</label><input type="date" id="dudate" /></li>
+						<li><label for="prior">Priority Level:</label><input type="range" id="prior"/></li>
+						<li><label for="InsName">Instructor Name:</label><input type="text" id="InsName"/></li>
+						<li><label for="email">Instructor E-Mail:</label><input type="email" id="email" placeholder="example@email.com"/></li>
+					</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Set Reminders/Add Notes</legend>
+					<ul>
+						<li><input type="radio" checked value="Two Days Prior" id="twodays" name="reminder"/><label for="twodays">Two Days Prior</label></li>	
+						<li><input type="radio" value="One Day Prior" id="oneday" name="reminder"/><label for="oneday">One Day Prior</label></li>
+						<li><label for="notes">Notes:</label><textarea id="notes"></textarea></li>
+						<li><input type="hidden" value="true"/></li>
+					</ul>
+			</fieldset>
+			<input type="submit" id="submit" value="Add Assignment"/>
+		</form>
+		<footer>
+			<a href="#" id="clearData">Clear Stored Data</a>
+			<a href="#" id="disData">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Assignment</a>
+		</footer>
+		<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>

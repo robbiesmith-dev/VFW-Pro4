@@ -1,0 +1,56 @@
+/*
+Robert Smith
+VFW 1206
+Project 2 stylesheet
+*/
+
+body {
+	background: url(http://www.dancetones.org/images/chalkboard.jpg);
+	color: #F2EDC8; 
+	font:italic bold 18px/30px chalkboard;}
+h1 {
+	text-align: center;
+	font-size: 24pt;
+	margin: 10px}
+p { 
+	text-align: center;}
+legend {
+	text-align: center;}
+fieldset {
+	margin: 20px 0px 40px -20px;
+	border: 0}
+#clname {
+	display: block;}
+#asname {
+	display: block;}
+#dudate {
+	display: block;}
+#prior {
+	display: block;}
+#InsName {
+	display: block;}
+#email {
+	display: block;}
+#notes {
+	display: block;}
+li {
+	font-size: 12pt;}
+a {
+	color: orange;}
+a:hover {
+	color: white;}
+footer {
+	text-align: center;}
+#errors {
+	color: red;
+	text-align: center;}
+
+
+
+	
+	
+
+	
+	
+	
+	
