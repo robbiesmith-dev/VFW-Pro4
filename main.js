@@ -106,6 +106,7 @@ function getData(){
 		var obj = JSON.parse(value);
 		var makeSublist = document.createElement('ul');
 		makeli.appendChild(makeSublist);
+		getImage(obj.GorI[1], makeSublist);
 		for(var n in obj){
 			var makeSubli = document.createElement('li');
 			makeSublist.appendChild(makeSubli);
@@ -115,6 +116,14 @@ function getData(){
 		}
 		makeItemLinks(localStorage.key(i), linksLi);
 	}
+};
+
+function getImage(imgName, makeSublist){
+	var imageLi = document.createElement('li');
+	makeSublist.appendChild(imageLi);
+	var newImage = document.createElement('img');
+	var setSrc = newImage.setAttribute("src", "images/"+ imgName + ".png");
+	imageLi.appendChild(newImage);
 };
 
 function autoFillData(){
